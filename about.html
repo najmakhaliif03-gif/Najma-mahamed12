@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najuu Collection | Dalabka Dharka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>✨💃NAJUU COLLECTION💃✨️ </h1>
+        <nav>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="table.html" class="active">Service</a></li>
+        </ul>
+
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Form-ka Dalabka Dharka</h2>
+        
+        <div class="form-container">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Xogta Shakhsiga</legend>
+                    
+                    <label for="fullname">Magacaaga dhamastiran:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Gali magacaaga..." required minlength="4">
+
+                    <label for="email">Email-kaaga:</label>
+                    <input type="email" id="email" name="email" placeholder="tusaale@gmail.com" required>
+
+                    <label for="phone">Lambarka Tel-ka:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Kaliya 61xxxxxxx" required pattern="[0-9]{9}">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Faahfaahinta Dalabka</legend>
+
+                    <label for="dress-type">Dooro Nooca Dharka:</label>
+                    <select id="dress-type" name="dress-type" required>
+                        <option value="">-- Fadlan Dooro --</option>
+                        <option value="dirac">surwaal dumar</option>
+                        <option value="abaya">Abaya Turki ah</option>
+                        <option value="baati">maro xaflad</option>
+                        <option value="cabayad">saako shidan</option>
+                    </select>
+
+                    <label>Cabbirka Aad Rabto (Size):</label>
+                    <div class="radio-group">
+                        <input type="radio" id="size-s" name="size" value="S"> <label for="size-s">S</label>
+                        <input type="radio" id="size-m" name="size" value="M" checked> <label for="size-m">M</label>
+                        <input type="radio" id="size-l" name="size" value="L"> <label for="size-l">L</label>
+                        <input type="radio" id="size-xl" name="size" value="XL"> <label for="size-xl">XL</label>
+                    </div>
+
+                    <label for="notes">Fariin ama Faahfaahin Dheeraad ah:</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Halkaan ku qor haddii aad cabbir gaar ah rabto..."></textarea>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Waxaan ogolahay shuruudaha Najuu Collection</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn"> fadlan Diro Dalabkaga</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Najuu Collection.</p>
+    </footer>
+
+</body>
+</html>
